@@ -4,6 +4,9 @@ pipeline {
                  pollSCM '* * * * * '
                 }
 	parameters {
+ 		 choice choices: ['QA', 'UAT'], description: 'choose the server', name: 'ENVIRONMENT'
+		}	
+	parameters {
  		 string description: 'type  the server name ', name: 'ENVIRONMENT'
 		}
         stages {
