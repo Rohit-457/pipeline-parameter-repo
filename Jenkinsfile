@@ -6,9 +6,6 @@ pipeline {
 	parameters {
  		 choice choices: ['QA', 'UAT'], description: 'choose the server', name: 'ENVIRONMENT'
 		}	
-	parameters {
- 		 string description: 'type  the server name ', name: 'ENVIRONMENT'
-		}
         stages {
                 stage (checkout){
                         steps{git 'https://github.com/Rohit-457/pipeline-parameter-repo.git'}
