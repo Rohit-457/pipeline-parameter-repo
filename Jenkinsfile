@@ -6,7 +6,7 @@ pipeline {
 
         stages {
                 stage (checkout){
-                        steps{git 'git 'https://github.com/Rohit-457/pipeline-parameter-repo.git''}
+                        steps{git 'https://github.com/Rohit-457/pipeline-parameter-repo.git'}
                 }
                 stage (build){
                         steps{sh 'mvn install'}
@@ -16,4 +16,3 @@ pipeline {
                 }
         }
 }
-
